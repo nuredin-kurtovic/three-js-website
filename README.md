@@ -43,52 +43,24 @@ module.exports = {
 };
 
 ### Add Tailwind directives to your CSS
-Inside `src/style.css`:
+Inside `src/styles.css`:
 
 @tailwind base;  
 @tailwind components;  
 @tailwind utilities;
 
----
-
-## 🧩 Example Three.js Setup
-
-Inside `src/main.js`:
-
-import * as THREE from "three";
-
-const scene = new THREE.Scene();  
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);  
-const renderer = new THREE.WebGLRenderer();  
-
-renderer.setSize(window.innerWidth, window.innerHeight);  
-document.body.appendChild(renderer.domElement);
-
-function animate() {  
-  requestAnimationFrame(animate);  
-  renderer.render(scene, camera);  
-}  
-animate();
+-------------------------
+Inside `dist add styles.css`:
 
 ---
 
 ## 🏃 Tailwind Watch Mode
-npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch
 
----
+Inside package.json scripts
 
-## 📁 Suggested Project Structure
+"build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
 
-your-project/  
-├── index.html  
-├── src/  
-│   ├── main.js  
-│   └── style.css  
-├── dist/  
-├── tailwind.config.js  
-├── postcss.config.js  
-└── package.json
-
+Terminal: npm run build:css
 ---
 
 ## ✔️ Done!
