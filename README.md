@@ -1,54 +1,9 @@
 ### 1. Install dependencies
-npm install
-
+---
 ### 2. Install Three.js
-npm install three
-
+---
 ### 3. Install Tailwind CSS **v3 specifically**
-npm install -D tailwindcss@3 postcss autoprefixer
-
-Initialize Tailwind:
-npx tailwindcss init -p
-
-This creates:
-- tailwind.config.js  
-- postcss.config.js
-
 ---
-
-## 🎨 Tailwind v3 Setup
-
-### tailwind.config.js (correct for v3)
-module.exports = {
-  content: [
-    "./index.html",
-    "./*.html",
-    "./script.js",
-    "./src/**/*.{js,ts,vue}"
-  ],
-  theme: {
-    extend: {
-      colors: {
-        bhx: "#02364D",
-      },
-    },
-  },
-  plugins: [],
-};
-
-
-### Add Tailwind directives to your CSS
-Inside `src/styles.css`:
-
-@tailwind base;  
-@tailwind components;  
-@tailwind utilities;
-
--------------------------
-Inside `dist add styles.css`:
-
----
-
 ## 🏃 Tailwind Watch Mode
 
 Inside package.json scripts
