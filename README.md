@@ -1,22 +1,10 @@
-# Three.js + Tailwind CSS v3 Project
-
-A starter setup using **Three.js** for 3D graphics and **Tailwind CSS v3.x** (NOT v4).
-
----
-
-## 🚀 Installation
-
-### 1. Clone the repository
-git clone https://github.com/your-username/your-repo.git  
-cd your-repo
-
-### 2. Install dependencies
+### 1. Install dependencies
 npm install
 
-### 3. Install Three.js
+### 2. Install Three.js
 npm install three
 
-### 4. Install Tailwind CSS **v3 specifically**
+### 3. Install Tailwind CSS **v3 specifically**
 npm install -D tailwindcss@3 postcss autoprefixer
 
 Initialize Tailwind:
