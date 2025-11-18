@@ -19,16 +19,23 @@ This creates:
 ## 🎨 Tailwind v3 Setup
 
 ### tailwind.config.js (correct for v3)
-module.exports = {  
-  content: [  
-    "./index.html",  
-    "./src/**/*.{js,ts,jsx,tsx}"  
-  ],  
-  theme: {  
-    extend: {},  
-  },  
-  plugins: [],  
+module.exports = {
+  content: [
+    "./index.html",
+    "./*.html",
+    "./script.js",
+    "./src/**/*.{js,ts,vue}"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        bhx: "#02364D",
+      },
+    },
+  },
+  plugins: [],
 };
+
 
 ### Add Tailwind directives to your CSS
 Inside `src/styles.css`:
