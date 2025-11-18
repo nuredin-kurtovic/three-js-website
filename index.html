@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Truck Viewer</title>
+    <link href="dist/styles.css" rel="stylesheet">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "three/": "./node_modules/three/"
+        }
+    }
+    </script>
+</head>
+
+<body class="text-white flex justify-center relative overflow-hidden">
+
+    <div id="shader-bg" class="absolute inset-0 -z-10 bg-gradient-to-t from-[#0b2f78] to-[#0a284a]"></div>
+
+    <div class="w-[1600px] h-screen flex">
+
+        <div class="w-1/2 flex flex-col justify-center px-16">
+            <h1 class="text-5xl font-bold leading-tight mb-6">
+                MORE THAN FREIGHT, <br>WE DELIVER PEACE OF MIND
+            </h1>
+
+            <h2 class="text-xl font-light opacity-90 leading-relaxed mb-10">
+                Real-time updates, tailored solutions, and 24/7 support—logistics made easy,
+                with service that always puts you first.
+            </h2>
+        </div>
+
+        <div class="viewer w-1/2 h-screen relative z-10">
+            <canvas id="three-canvas" class="w-full h-full block"></canvas>
+        </div>
+
+    </div>
+
+    <script type="module">
+        import { createBackground } from "./shaderBackground.js";
+        createBackground(document.getElementById("shader-bg"));
+    </script>
+
+    <script type="module" src="object.js"></script>
+</body>
+</html>
+
+
+
+
+
