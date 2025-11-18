@@ -1,4 +1,6 @@
-*, ::before, ::after {
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -52,7 +54,7 @@
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,151 +556,140 @@ video {
   display: none;
 }
 
-.absolute {
+.absolute{
   position: absolute;
 }
 
-.relative {
+.relative{
   position: relative;
 }
 
-.inset-0 {
+.inset-0{
   inset: 0px;
 }
 
-.-z-10 {
+.right-4{
+  right: 1rem;
+}
+
+.-z-10{
   z-index: -10;
 }
 
-.z-10 {
+.z-10{
   z-index: 10;
 }
 
-.mb-10 {
+.z-20{
+  z-index: 20;
+}
+
+.mb-10{
   margin-bottom: 2.5rem;
 }
 
-.mb-6 {
+.mb-6{
   margin-bottom: 1.5rem;
 }
 
-.block {
+.block{
   display: block;
 }
 
-.flex {
+.flex{
   display: flex;
 }
 
-.h-full {
+.h-full{
   height: 100%;
 }
 
-.h-screen {
+.h-screen{
   height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[1500px\] {
-  width: 1500px;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[1600px\] {
+.w-\[1600px\]{
   width: 1600px;
 }
 
-.resize {
-  resize: both;
+.w-\[70\%\]{
+  width: 70%;
 }
 
-.flex-col {
+.w-full{
+  width: 100%;
+}
+
+.cursor-dot-circle-xl{
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><circle cx='32' cy='32' r='25' fill='none' stroke='white' stroke-width='2'/><circle cx='32' cy='32' r='5' fill='white'/></svg>") 32 32, crosshair;
+}
+
+.flex-col{
   flex-direction: column;
 }
 
-.justify-center {
+.justify-center{
   justify-content: center;
 }
 
-.overflow-hidden {
+.overflow-hidden{
   overflow: hidden;
 }
 
-.bg-bhx {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 54 77 / var(--tw-bg-opacity, 1));
-}
-
-.bg-transparent {
-  background-color: transparent;
-}
-
-.bg-gradient-to-t {
+.bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.from-\[\#111\] {
-  --tw-gradient-from: #111 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(17 17 17 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#0b2f78\] {
+.from-\[\#0b2f78\]{
   --tw-gradient-from: #0b2f78 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(11 47 120 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-\[\#335\] {
-  --tw-gradient-to: #335 var(--tw-gradient-to-position);
-}
-
-.to-\[\#0a284a\] {
+.to-\[\#0a284a\]{
   --tw-gradient-to: #0a284a var(--tw-gradient-to-position);
 }
 
-.px-16 {
+.px-16{
   padding-left: 4rem;
   padding-right: 4rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
+.font-albert{
+  font-family: Albert Sans, sans-serif;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
   line-height: 1;
 }
 
-.text-xl {
+.text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.font-bold {
+.font-bold{
   font-weight: 700;
 }
 
-.font-light {
+.font-light{
   font-weight: 300;
 }
 
-.leading-relaxed {
+.leading-relaxed{
   line-height: 1.625;
 }
 
-.leading-tight {
+.leading-tight{
   line-height: 1.25;
 }
 
-.text-white {
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.opacity-90 {
+.opacity-90{
   opacity: 0.9;
 }

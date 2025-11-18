@@ -72,11 +72,11 @@ function init() {
 function loadModel() {
     const loader = new GLTFLoader();
 
-    loader.load("truck.glb", (gltf) => {
+    loader.load("truck2.glb", (gltf) => {
         truckModel = gltf.scene;
 
         // Scale & center
-        truckModel.scale.set(100, 100, 100);
+        truckModel.scale.set(30, 30, 30);
         truckModel.position.set(0, 0, 0);
 
         scene.add(truckModel);
